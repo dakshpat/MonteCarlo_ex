@@ -34,7 +34,14 @@ class MonteCarloEx: NSObject, ObservableObject {
     
     func calculateMonteCarloIntegral(leftEndPoint: Double, rightEndPoint:Double, maxGuesses: Double) async -> Double{
         
+        var numberOfGuesses = 0.0
+        var pointsInRadius = 0.0
+        var integral = 0.0
+        var point = (xPoint: 0.0, yPoint: 0.0)
+        var radiusPoint = 0.0
         
+        var newInsidePoints : [(xPoint: Double, yPoint: Double)] = []
+        var newOutsidePoints : [(xPoint: Double, yPoint: Double)] = []
         
         
     }

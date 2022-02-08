@@ -21,6 +21,8 @@
 		B13F056427ADAECF007699AB /* Bounding Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F056227ADAECF007699AB /* Bounding Box.swift */; };
 		B13F056627ADAF12007699AB /* MonteCarloFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F056527ADAF12007699AB /* MonteCarloFunc.swift */; };
 		B13F056727ADAF12007699AB /* MonteCarloFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F056527ADAF12007699AB /* MonteCarloFunc.swift */; };
+		B1AF64DF27B1F2B3008E9129 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */; };
+		B1AF64E027B1F2B3008E9129 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		B13F054C27ADAE8E007699AB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		B13F056227ADAECF007699AB /* Bounding Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bounding Box.swift"; sourceTree = "<group>"; };
 		B13F056527ADAF12007699AB /* MonteCarloFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteCarloFunc.swift; sourceTree = "<group>"; };
+		B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 				B13F056227ADAECF007699AB /* Bounding Box.swift */,
 				B13F052727ADAE8B007699AB /* ContentView.swift */,
 				B13F056527ADAF12007699AB /* MonteCarloFunc.swift */,
+				B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */,
 				B13F052827ADAE8D007699AB /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -257,6 +261,9 @@
 				Base,
 			);
 			mainGroup = B13F052027ADAE8B007699AB;
+			packageReferences = (
+				B13F056827B1DFF2007699AB /* XCRemoteSwiftPackageReference "core-plot" */,
+			);
 			productRefGroup = B13F052E27ADAE8D007699AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -311,6 +318,7 @@
 				B13F055027ADAE8E007699AB /* ContentView.swift in Sources */,
 				B13F054E27ADAE8E007699AB /* MonteCarlo_exApp.swift in Sources */,
 				B13F056627ADAF12007699AB /* MonteCarloFunc.swift in Sources */,
+				B1AF64DF27B1F2B3008E9129 /* CorePlot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +330,7 @@
 				B13F055127ADAE8E007699AB /* ContentView.swift in Sources */,
 				B13F054F27ADAE8E007699AB /* MonteCarlo_exApp.swift in Sources */,
 				B13F056727ADAF12007699AB /* MonteCarloFunc.swift in Sources */,
+				B1AF64E027B1F2B3008E9129 /* CorePlot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +714,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B13F056827B1DFF2007699AB /* XCRemoteSwiftPackageReference "core-plot" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/core-plot/core-plot.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = B13F052127ADAE8B007699AB /* Project object */;
 }

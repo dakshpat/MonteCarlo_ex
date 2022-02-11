@@ -17,7 +17,7 @@ class MonteCarloEx: NSObject, ObservableObject {
     @Published var totalGuesses = 0.0
     @Published var Guesses = 0.0
     @Published var leftEndPoint = 0.0
-    @Published var rightEndPoint = 0.0
+    @Published var rightEndPoint = 1.0
     @Published var pointsUnderCurve = 0.0
     @Published var integral = 0.0
     
@@ -41,7 +41,7 @@ class MonteCarloEx: NSObject, ObservableObject {
         
     }
     
-    
+    ///creating a fucntion  that actual  generates random numbers and figures out where it is inside or outside
     func calculateMonteCarloIntegral(leftEndPoint: Double, rightEndPoint:Double, maxGuesses: Double) async -> Double{
         
         var numberOfGuesses = 0.0

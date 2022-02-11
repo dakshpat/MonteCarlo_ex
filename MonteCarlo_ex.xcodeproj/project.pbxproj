@@ -21,8 +21,8 @@
 		B13F056427ADAECF007699AB /* Bounding Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F056227ADAECF007699AB /* Bounding Box.swift */; };
 		B13F056627ADAF12007699AB /* MonteCarloFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F056527ADAF12007699AB /* MonteCarloFunc.swift */; };
 		B13F056727ADAF12007699AB /* MonteCarloFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F056527ADAF12007699AB /* MonteCarloFunc.swift */; };
-		B1AF64DF27B1F2B3008E9129 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */; };
-		B1AF64E027B1F2B3008E9129 /* CorePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */; };
+		B1AF657227B6C426008E9129 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = B1AF657127B6C426008E9129 /* CorePlot */; };
+		B1AF657527B6C45B008E9129 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = B1AF657427B6C45B008E9129 /* CorePlot */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,6 @@
 		B13F054C27ADAE8E007699AB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		B13F056227ADAECF007699AB /* Bounding Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bounding Box.swift"; sourceTree = "<group>"; };
 		B13F056527ADAF12007699AB /* MonteCarloFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonteCarloFunc.swift; sourceTree = "<group>"; };
-		B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AF657227B6C426008E9129 /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AF657527B6C45B008E9129 /* CorePlot in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +101,7 @@
 				B13F053D27ADAE8E007699AB /* Tests iOS */,
 				B13F054927ADAE8E007699AB /* Tests macOS */,
 				B13F052E27ADAE8D007699AB /* Products */,
+				B1AF657327B6C45B008E9129 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +112,6 @@
 				B13F056227ADAECF007699AB /* Bounding Box.swift */,
 				B13F052727ADAE8B007699AB /* ContentView.swift */,
 				B13F056527ADAF12007699AB /* MonteCarloFunc.swift */,
-				B1AF64DE27B1F2B3008E9129 /* CorePlot.swift */,
 				B13F052827ADAE8D007699AB /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -153,6 +154,13 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		B1AF657327B6C45B008E9129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +177,9 @@
 			dependencies = (
 			);
 			name = "MonteCarlo_ex (iOS)";
+			packageProductDependencies = (
+				B1AF657127B6C426008E9129 /* CorePlot */,
+			);
 			productName = "MonteCarlo_ex (iOS)";
 			productReference = B13F052D27ADAE8D007699AB /* MonteCarlo_ex.app */;
 			productType = "com.apple.product-type.application";
@@ -186,6 +197,9 @@
 			dependencies = (
 			);
 			name = "MonteCarlo_ex (macOS)";
+			packageProductDependencies = (
+				B1AF657427B6C45B008E9129 /* CorePlot */,
+			);
 			productName = "MonteCarlo_ex (macOS)";
 			productReference = B13F053327ADAE8E007699AB /* MonteCarlo_ex.app */;
 			productType = "com.apple.product-type.application";
@@ -262,7 +276,7 @@
 			);
 			mainGroup = B13F052027ADAE8B007699AB;
 			packageReferences = (
-				B13F056827B1DFF2007699AB /* XCRemoteSwiftPackageReference "core-plot" */,
+				B1AF657027B6C426008E9129 /* XCRemoteSwiftPackageReference "core-plot" */,
 			);
 			productRefGroup = B13F052E27ADAE8D007699AB /* Products */;
 			projectDirPath = "";
@@ -318,7 +332,6 @@
 				B13F055027ADAE8E007699AB /* ContentView.swift in Sources */,
 				B13F054E27ADAE8E007699AB /* MonteCarlo_exApp.swift in Sources */,
 				B13F056627ADAF12007699AB /* MonteCarloFunc.swift in Sources */,
-				B1AF64DF27B1F2B3008E9129 /* CorePlot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,7 +343,6 @@
 				B13F055127ADAE8E007699AB /* ContentView.swift in Sources */,
 				B13F054F27ADAE8E007699AB /* MonteCarlo_exApp.swift in Sources */,
 				B13F056727ADAF12007699AB /* MonteCarloFunc.swift in Sources */,
-				B1AF64E027B1F2B3008E9129 /* CorePlot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,15 +728,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B13F056827B1DFF2007699AB /* XCRemoteSwiftPackageReference "core-plot" */ = {
+		B1AF657027B6C426008E9129 /* XCRemoteSwiftPackageReference "core-plot" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/core-plot/core-plot.git";
+			repositoryURL = "https://github.com/core-plot/core-plot";
 			requirement = {
-				kind = exactVersion;
-				version = 2.4.0;
+				branch = "release-2.4";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1AF657127B6C426008E9129 /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1AF657027B6C426008E9129 /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+		B1AF657427B6C45B008E9129 /* CorePlot */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1AF657027B6C426008E9129 /* XCRemoteSwiftPackageReference "core-plot" */;
+			productName = CorePlot;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B13F052127ADAE8B007699AB /* Project object */;
 }

@@ -48,8 +48,17 @@ class MonteCarloEx: NSObject, ObservableObject {
         var pointsInRadius = 0.0
         var point = (xPoint: 0.0, yPoint: 0.0)
         
-        /// exPoint is the y value of e-x for a given x value
-        var exPoint = 0.0
+    /// one s orbitals are the y values of function below for a given r value
+    ///            1                   - r
+    ///      -------------------- * e ----
+    ///      _______________         a0
+    ///     /          3 / 2
+    ///   |  /  pi  *  a
+    ///   |/               0
+
+
+        var oneSOrbital = 0.0
+        var oneSOrbital2 = 0.0
         
         var newInsidePoints : [(xPoint: Double, yPoint: Double)] = []
         var newOutsidePoints : [(xPoint: Double, yPoint: Double)] = []
